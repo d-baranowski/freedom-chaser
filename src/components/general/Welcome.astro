@@ -1,44 +1,249 @@
 ---
-import { Image } from 'astro:assets'
+import { Image } from "astro:assets";
 
-import logoImage from '../../assets/logo.jpg';
+import logoImage from "../../assets/authors/author.jpg";
 
-import slide1 from '../../assets/slide-1.jpg';
-import slide2 from '../../assets/slide-2.jpg';
-import slide3 from '../../assets/slide-3.jpg';
-import slide4 from '../../assets/slide-4.jpg';
-import slide5 from '../../assets/slide-5.jpg';
+import slide1 from "../../assets/slide-1.jpg";
+import slide2 from "../../assets/slide-2.jpg";
+import slide3 from "../../assets/slide-3.jpg";
+import slide4 from "../../assets/slide-4.jpg";
+import slide5 from "../../assets/slide-5.jpg";
+import map from "../../assets/map.png";
 ---
-<section class="
-        container mx-auto max-w-screen-xl px-7 py-10
-        lg:min-h-[500px] content-center font-pacamara
-        prose lg:prose-xl
-        prose-headings:font-pacamara-space prose-headings:mt-5 prose-headings:text-pacamara-dark prose-headings:font-bold lg:prose-h1:text-7xl prose-h1:mt-0 prose-heading:transition-all prose-heading:duration-300  
-        prose-p:text-pacamara-primary/50 dark:prose-p:text-white/70 prose-p:mb-0 prose-p:transition-all prose-p:duration-300
-        prose-img:mt-0 prose-img:mb-0  
-        dark:prose-headings:text-white
-    ">
-    <Image src={logoImage} width={200} alt="" loading="eager" decoding="sync" class="relative w-[150px] lg:w-[220px] rounded-[15px] image-shine"  />
-    <p>
-        Aromatic brew, pure indulgence, exquisite satisfaction.
-    </p>
-    <h1><span class="gradient-underline"><span>Awaken your senses to the tantalizing allure of specialty coffee bliss.</span></span></h1>
+
+<section
+  class="sm:grid grid-flow-row-dense grid-cols-4 grid-rows-1 mx-auto max-w-screen-xl px-7 py-10 font-pacamara prose lg:prose-xl prose-headings:font-pacamara-space prose-headings:mt-5 prose-headings:text-pacamara-dark prose-headings:font-bold lg:prose-h1:text-7xl prose-h1:mt-0 prose-heading:transition-all prose-heading:duration-300 prose-p:text-pacamara-primary/50 dark:prose-p:text-white/70 prose-p:mb-0 prose-p:transition-all prose-p:duration-300 prose-img:mt-0 prose-img:mb-0 dark:prose-headings:text-white"
+>
+  <Image
+    src={logoImage}
+    width={500}
+    alt=""
+    loading="eager"
+    decoding="sync"
+    class="relative w-[150px] lg:w-[220px] rounded-[15px]"
+  />
+  <h3 class="text-md md:col-span-3 sm:col-span-4">
+    <span
+      ><span
+        >Even after 400 generations in villages and cities we have not
+        forgotten. The open road still softly calls, like a nearly forgotten
+        song of childhood.<br /><br /> ~ Carl Sagan in Pale Blue Dot</span
+      ></span
+    >
+  </h3>
+</section>
+<section
+  class="mx-auto max-w-screen-xl px-7 py-10 font-pacamara prose lg:prose-xl prose-headings:font-pacamara-space prose-headings:mt-5 prose-headings:text-pacamara-dark prose-headings:font-bold lg:prose-h1:text-7xl prose-h1:mt-0 prose-heading:transition-all prose-heading:duration-300 prose-p:text-pacamara-primary/50 dark:prose-p:text-white/70 prose-p:mb-0 prose-p:transition-all prose-p:duration-300 prose-img:mt-0 prose-img:mb-0 dark:prose-headings:text-white"
+>
+  <h1>Journey</h1>
+</section>
+<section
+  class="sm:grid grid-flow-row-dense grid-cols-3 grid-rows-2 mx-auto max-w-screen-xl px-7 py-10 font-pacamara prose lg:prose-xl prose-headings:font-pacamara-space prose-headings:mt-5 prose-headings:text-pacamara-dark prose-headings:font-bold lg:prose-h1:text-7xl prose-h1:mt-0 prose-heading:transition-all prose-heading:duration-300 prose-p:text-pacamara-primary/50 dark:prose-p:text-white/70 prose-p:mb-0 prose-p:transition-all prose-p:duration-300 prose-img:mt-0 prose-img:mb-0 dark:prose-headings:text-white"
+>
+  <h3>Origin:<br /> Krakow</h3>
+  <h3>Destination:<br /> Kathmandu</h3>
+  <h3>Current Country:<br /> Turkey</h3>
+  <h3>Discance Travelled:<br /> 2298 km</h3>
+  <h3>Days Cycled:<br /> 43</h3>
+  <h3>Sending love to all friends I made along the way ❤️</h3>
 </section>
 
 <section class="my-10 flex justify-center gap-5 overflow-hidden py-4 sm:gap-10">
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]">
-        <Image src={slide1} width={800} alt="" class="object-cover image-shine h-[200px] md:h-[500px]" />
+  <div
+    class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]"
+  >
+    <Image
+      src={slide1}
+      width={800}
+      alt=""
+      class="object-cover image-shine h-[200px] md:h-[500px]"
+    />
+  </div>
+  <div
+    class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 -rotate-2 rounded-[15px]"
+  >
+    <Image
+      src={slide2}
+      width={800}
+      alt=""
+      class="object-cover image-shine h-[200px] md:h-[500px]"
+    />
+  </div>
+  <div
+    class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]"
+  >
+    <Image
+      src={slide3}
+      width={800}
+      alt=""
+      class="object-cover image-shine h-[200px] md:h-[500px]"
+    />
+  </div>
+  <div
+    class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]"
+  >
+    <Image
+      src={slide4}
+      width={800}
+      alt=""
+      class="object-cover image-shine h-[200px] md:h-[500px]"
+    />
+  </div>
+  <div
+    class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 -rotate-2 rounded-[15px]"
+  >
+    <Image
+      src={slide5}
+      width={800}
+      alt=""
+      class="object-cover image-shine h-[200px] md:h-[500px]"
+    />
+  </div>
+</section>
+
+<section
+  class="mx-auto max-w-screen-xl px-7 py-10 font-pacamara prose lg:prose-xl prose-headings:font-pacamara-space prose-headings:mt-5 prose-headings:text-pacamara-dark prose-headings:font-bold lg:prose-h1:text-7xl prose-h1:mt-0 prose-heading:transition-all prose-heading:duration-300 prose-p:text-pacamara-primary/50 dark:prose-p:text-white/70 prose-p:mb-0 prose-p:transition-all prose-p:duration-300 prose-img:mt-0 prose-img:mb-0 dark:prose-headings:text-white"
+>
+  <h1>Map</h1>
+</section>
+<section class="p-10 flex justify-center">
+  <Image src={map} width={1200} alt="" class="object-cover" />
+</section>
+
+<section class="p-10 flex justify-center">
+  <div id="mc_embed_shell">
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style type="text/css">
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+      <form
+        action="https://inspiration-particle.us12.list-manage.com/subscribe/post?u=252717a6ed5ebb5bf3b7801d5&id=81803dc881&f_id=004644e0f0"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate"
+        target="_blank"
+      >
+        <div id="mc_embed_signup_scroll">
+          <h2>Subscribe</h2>
+          <div class="indicates-required">
+            <span class="asterisk">*</span> indicates required
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL"
+              >Email Address <span class="asterisk">*</span></label
+            ><input
+              type="email"
+              name="EMAIL"
+              class="required email"
+              id="mce-EMAIL"
+              required=""
+              value=""
+            /><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+          </div>
+          <div id="mce-responses" class="clear foot">
+            <div
+              class="response"
+              id="mce-error-response"
+              style="display: none;"
+            >
+            </div>
+            <div
+              class="response"
+              id="mce-success-response"
+              style="display: none;"
+            >
+            </div>
+          </div>
+          <div aria-hidden="true" style="position: absolute; left: -5000px;">
+            /* real people should not fill this in and expect good things - do
+            not remove this or risk form bot signups */
+            <input
+              type="text"
+              name="b_252717a6ed5ebb5bf3b7801d5_81803dc881"
+              tabindex="-1"
+              value=""
+            />
+          </div>
+          <div class="optionalParent">
+            <div class="clear foot">
+              <input
+                type="submit"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="button"
+                value="Subscribe"
+              />
+              <p style="margin: 0px auto;">
+                <a
+                  href="http://eepurl.com/iAdXFM"
+                  title="Mailchimp - email marketing made easy and fun"
+                  ><span
+                    style="display: inline-block; background-color: transparent; border-radius: 4px;"
+                    ><img
+                      class="refferal_badge"
+                      src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                      alt="Intuit Mailchimp"
+                      style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"
+                    /></span
+                  ></a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 -rotate-2 rounded-[15px]">
-        <Image src={slide2} width={800} alt="" class="object-cover image-shine h-[200px] md:h-[500px]" />
-    </div>
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]">
-        <Image src={slide3} width={800} alt="" class="object-cover image-shine h-[200px] md:h-[500px]" />
-    </div>
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12  rotate-2 rounded-[15px]">
-        <Image src={slide4} width={800} alt="" class="object-cover image-shine h-[200px] md:h-[500px]" />
-    </div>
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 -rotate-2 rounded-[15px]">
-        <Image src={slide5} width={800} alt="" class="object-cover image-shine h-[200px] md:h-[500px]" />
-    </div>
+    <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script><script type="text/javascript">
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = "EMAIL";
+        ftypes[0] = "email";
+        fnames[1] = "FNAME";
+        ftypes[1] = "text";
+        fnames[2] = "LNAME";
+        ftypes[2] = "text";
+        fnames[3] = "ADDRESS";
+        ftypes[3] = "address";
+        fnames[4] = "PHONE";
+        ftypes[4] = "phone";
+        fnames[5] = "BIRTHDAY";
+        ftypes[5] = "birthday";
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script>
+  </div>
+</section>
+
+<section class="p-10">
+  <div id="disqus_thread"></div>
+  <script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+    var disqus_config = function () {
+      this.page.url = "/"; // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "welcome"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function () {
+      // DON'T EDIT BELOW THIS LINE
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://freedom-chaser.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
 </section>

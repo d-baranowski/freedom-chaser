@@ -27,7 +27,7 @@ const { Content } = await entry.render();
         <h1 class="transition-all duration-300 dark:text-white">{entry.data.title}</h1>
     </div>
     {entry.data.image && 
-        <Image src={entry.data.image} width="1200" height="250" alt="" loading="eager" decoding="sync" class="block relative mx-auto mt-10 object-cover h-72 md:h-[350px] image-shine rounded-[15px]" loading="eager" />
+        <Image src={entry.data.image} width="1200" height="250" alt="" loading="eager" decoding="sync" class="block relative mx-auto mt-10 object-cover h-72 md:h-[350px] rounded-[15px]" loading="eager" />
     }
         <div class="
             lg:px-0 pt-10 mb-5 mx-auto
@@ -46,5 +46,29 @@ const { Content } = await entry.render();
         <Content />
     </div>
 </article>
+
+<section class="p-10">
+  <div id="disqus_thread"></div>
+</section>
+
+<script is:inline define:vars={{ entry }}>
+  /**
+   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+  var disqus_config = function () {
+    this.page.url = "/" + entry.data.slug; // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = entry.data.slug; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+
+  (function () {
+    // DON'T EDIT BELOW THIS LINE
+    var d = document,
+      s = d.createElement("script");
+    s.src = "https://freedom-chaser.disqus.com/embed.js";
+    s.setAttribute("data-timestamp", +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
 
 </Base>

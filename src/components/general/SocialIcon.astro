@@ -1,12 +1,19 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from "astro-icon";
 
-const { socialUrl=false, socialType } = Astro.props;
+const { socialUrl = false, socialType, pack, iconName } = Astro.props;
 ---
-{socialUrl &&
-<li>
-    <a href={socialUrl} target="_blank" aria-label={socialType + "link"}>
-        <Icon name={socialType} class="w-auto h-[15px] transition-all duration-300 fill-pacamara-primary/60 hover:fill-pacamara-secondary dark:fill-pacamara-accent dark:hover:fill-pacamara-secondary" />
-    </a>
-</li>
+
+{
+  socialUrl && (
+    <li>
+      <a href={socialUrl} target="_blank" aria-label={socialType + "link"}>
+        <Icon
+          pack={pack}
+          name={iconName || socialType}
+          class="w-auto h-[15px] transition-all duration-300 stroke-pacamara-primary/60 fill-pacamara-primary/60 hover:fill-pacamara-secondary dark:fill-pacamara-accent dark:hover:fill-pacamara-secondary"
+        />
+      </a>
+    </li>
+  )
 }
